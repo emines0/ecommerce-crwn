@@ -4,6 +4,7 @@ import FormInput from '../form-input/form-input.component';
 import Button from '../button/button.component';
 import './sign-in-form.style.scss';
 
+
 const defaultFormFields= {
     email: '',
     password: '',
@@ -12,6 +13,7 @@ const defaultFormFields= {
 const SignIn = () => {
     const[formFields, setFormFields] = useState(defaultFormFields);
     const {email, password} = formFields;
+
 
     const resetFormFields =() => {
         setFormFields(defaultFormFields);
@@ -27,7 +29,7 @@ const SignIn = () => {
 
 
         try {
-            const response = await signInAuthUserWithEmailAndPassword(email, password);
+            const {user} = await signInAuthUserWithEmailAndPassword(email, password);
             resetFormFields();
 
         } catch (error) {
