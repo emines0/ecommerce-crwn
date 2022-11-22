@@ -1,7 +1,7 @@
 {
   "name": "ecommerce-crwn",
   "version": "0.1.0",
-  "homepage": "https://emines0.github.io/ecommerce-crwn",
+  "homepage": ".",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
