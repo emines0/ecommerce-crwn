@@ -40,7 +40,7 @@ const firebaseConfig = { // configuration of certatin firebase db
 };
 
 // Initialization of firebase database
-const firebaseApp = initializeApp(firebaseConfig);
+initializeApp(firebaseConfig);
 
 // Every time if someone interact with provider we always force them to select account; specific for google auth
 const googleProvider = new GoogleAuthProvider();
